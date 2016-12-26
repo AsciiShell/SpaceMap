@@ -26,7 +26,7 @@ var img1 = document.getElementById("img1");
 var t = 0;
 function move() {
   document.all.img1.style.left = 200 + 100*Math.sin(t*2*Math.PI/360) + "px";
-  document.all.img1.style.top = 200 + 100*Math.cos(t*2*Math.PI/360) + "px";
+  document.all.img1.style.top = 200 + 200*Math.cos(t*2*Math.PI/360) + "px";
   if ((curPosX == (width - imgWidth)) || (curPosY == (height - imgHeight))) {
     clearInterval(interval);
   }
